@@ -1,4 +1,5 @@
 import { createGlobalStyle, css } from 'styled-components'
+import {} from 'styled-components/cssprop'
 
 const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
@@ -14,16 +15,16 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-${({ theme }) => css`
-  html {
-    font-size: 62.5%;
-  }
-  body {
-    font-family: ${theme.font.family};
-    font-size: ${theme.font.sizes.medium};
-    background-color: ${theme.colors.darkBlue};
-  }
-`}
+  ${({ theme }) => css`
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      font-family: ${theme.font.family};
+      font-size: ${theme.font.sizes.medium};
+      background-color: ${theme.colors.darkBlue};
+    }
+  `}
 `
 
 export default GlobalStyles
