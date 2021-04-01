@@ -1,5 +1,4 @@
 import { createGlobalStyle, css } from 'styled-components'
-import {} from 'styled-components/cssprop'
 
 const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
