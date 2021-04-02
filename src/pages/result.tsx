@@ -2,7 +2,7 @@ import Title from 'components/Title'
 import Pokemon from 'components/Pokemon'
 import ButtonsSection from 'components/ButtonsSection'
 import axios from 'axios'
-import { GetStaticProps } from 'next'
+import { GetServerSideProps } from 'next'
 import { PokemonPageProps } from 'types/api'
 
 export default function Home({ results }: PokemonPageProps) {
@@ -27,11 +27,10 @@ function formatPokemonNumber(number: number) {
   else if (number < 100) formattedNumber = '0' + number.toString()
   else formattedNumber = number.toString()
 
-  console.log('formatted number result: ' + formattedNumber)
   return formattedNumber
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const pokemonNumber = getRandomPokemonNumber(386)
   const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonNumber}`
   const { data } = await axios.get(pokemonUrl)
@@ -45,8 +44,6 @@ export const getStaticProps: GetStaticProps = async () => {
     name,
     img
   }
-
-  console.log(results)
 
   return {
     props: {
