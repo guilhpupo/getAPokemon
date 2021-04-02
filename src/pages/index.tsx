@@ -5,7 +5,7 @@ import Description from 'components/Description'
 export default function Home() {
   return (
     <>
-      <Title />
+      <Title>Get a Pokémon</Title>
       <Pokeball />
       <Description />
     </>

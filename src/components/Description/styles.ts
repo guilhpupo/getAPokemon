@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
     text-align: center;
     font-size: 3.2rem;
     color: ${theme.colors.yellow};
-    letter-spacing: 0.1rem;
+    font-weight: ${theme.font.normal};
   `}
 `
 export const MainText = styled.h2`

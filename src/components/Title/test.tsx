@@ -5,7 +5,7 @@ import Title from '.'
 
 describe('<Title />', () => {
   it('should render correctly', () => {
-    renderWithTheme(<Title />)
+    renderWithTheme(<Title>Get a Pokémon!</Title>)
 
     expect(
       screen.getByRole('heading', { name: /get a pokémon!/i })

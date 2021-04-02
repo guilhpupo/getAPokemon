@@ -1,5 +1,11 @@
 import * as S from './styles'
 
-const Title = () => <S.Wrapper>Get a Pokémon!</S.Wrapper>
+export type TitleProps = {
+  children: React.ReactNode
+}
+
+const Title = ({ children = 'Get a Pokémon!' }: TitleProps) => (
+  <S.Wrapper>{children}</S.Wrapper>
+)
 
 export default Title

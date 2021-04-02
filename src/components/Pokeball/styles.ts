@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
     justify-content: center;
   `}
 `
+
 export const Image = styled.img`
   ${() => css`
     width: 30rem;

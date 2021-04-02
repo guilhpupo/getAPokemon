@@ -14,7 +14,7 @@ describe('<Description />', () => {
     ).toBeInTheDocument()
     expect(
       screen.getByRole('heading', {
-        name: /Click on the Pokéball to get your Pokémon./i
+        name: /Click on the Poké ball to get your Pokémon./i
       })
     ).toBeInTheDocument()
   })

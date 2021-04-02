@@ -8,11 +8,13 @@ export const Wrapper = styled.h1`
     color: ${theme.colors.yellow};
     font-family: ${theme.font.pokemon};
     font-size: 3.8rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.3rem;
     text-align: center;
+    margin-top: 5rem;
 
     ${media.greaterThan('medium')`
-    font-size: 6rem
-    letter-spacing: 0.3rem;`}
+    font-size: 5rem;
+    margin-top: 0;
+    `}
   `}
 `

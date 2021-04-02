@@ -1,7 +1,8 @@
 import { createGlobalStyle, css } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 @font-face {
   font-family: Pokemon;
 
