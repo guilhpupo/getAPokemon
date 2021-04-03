@@ -31,8 +31,13 @@
 
 # :camera: Screenshots
 <div align="center">
+<<<<<<< HEAD
    <img src="./public/img/home.png" width="400px">
    <img src="./public/img/result.png" width="400px">
+=======
+   <img src="./.github/home.png" width="400px">
+   <img src="./.github/result.png" width="400px">
+>>>>>>> 7ec603f26e4f25efe5755a34a18071f98e1bd0a3
 </div>
 
 # :rocket: Technologies
